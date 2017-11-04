@@ -7,6 +7,8 @@
     "bootstrap": "^4.0.0-alpha.6",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
+    "jquery-countdown": "^2.2.0",
+    "jquery-sticky": "github:garand/sticky",
     "popper.js": "^1.12.6"
   },
   "devDependencies": {},
