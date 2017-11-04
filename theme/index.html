@@ -13,56 +13,97 @@
   <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="dist/css/style.css">
 </head>
 
 <body>
 
-  <header class="container">
-    <nav class="navbar navbar-expand-md navbar-light bg-faded">
+  <header id="sticker">
+    <nav class="navbar navbar-expand-md navbar-custom bg-faded container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Navbar</a>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
-          <a class="nav-item nav-link disabled" href="#">Disabled</a>
+      <div class="row container">
+        <div class="col-md-4">
+          <a class="navbar-brand" href="#">Navbar</a>
+        </div>
+        <div class="col-md-8">
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="#">Features</a>
+              <a class="nav-item nav-link" href="#">Pricing</a>
+            </div>
+          </div>
         </div>
       </div>
+
+
     </nav>
 
   </header>
 
-  <section id="slider">
+  <section id="slider" class="p-0">
+  </section>
+
+  <section id="highlight" class="p-0">
+    <div class="row">
+      <div class="col-sm-8 left">
+        <h2>Junte-se a nós</h2>
+        <p>
+          luctus nec ullamcorper mattis, pulvinar dapibus leo
+        </p>
+      </div>
+      <div id="countdown" class="col-sm-4 right">
+        <div class="row">
+          <div class="col-sm-2 offset-sm-2">
+            <span class="countdown" id="cd-day"></span>
+            <h5>DIAS</h5>
+          </div>
+          <div class="col-sm-2">
+            <span class="countdown" id="cd-hour"></span>
+            <h5>HORAS</h5>
+          </div>
+          <div class="col-sm-2">
+            <span class="countdown" id="cd-minute"></span>
+            <h5>MINUTOS</h5>
+          </div>
+          <div class="col-sm-2">
+            <span class="countdown" id="cd-second"></span>
+            <h5>SEGUNDOS</h5>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
 
   <section id="info" class="container">
     <div class="row text-center">
       <div class="col-md-12">
         <h1>II Prêmio Destaques de TI do IFS</h1>
-        <p>
+        <p class="lead">
           Sed condimentum tempus auctor. Etiam euismod dapibus odio eu congue. Maecenas eros lacus, tempus et pulvinar ac, commodo eget lacus. Curabitur ex non mi suscipit varius. Phasellus ante lorem, sollicitudin quis erat sit amet, ultrices purus.
         </p>
       </div>
       <div class="col-md-4">
-        <i></i>
+        <i class="fa fa-globe"></i>
         <h4>New Topics</h4>
         <p>
           Sed facilisis justo risus viverra vulputate. Mauris vel ipsum diam condimentum tempus purus.
         </p>
       </div>
       <div class="col-md-4">
-        <i></i>
+        <i class="fa fa-microphone"></i>
         <h4>New Topics</h4>
         <p>
           Sed facilisis justo risus viverra vulputate. Mauris vel ipsum diam condimentum tempus purus.
         </p>
       </div>
       <div class="col-md-4">
-        <i></i>
+        <i class="fa fa-trophy"></i>
         <h4>New Topics</h4>
         <p>
           Sed facilisis justo risus viverra vulputate. Mauris vel ipsum diam condimentum tempus purus.
@@ -101,10 +142,56 @@
         <h2>Programação</h2>
         <p class="lead">Sed condimentum tempus auctor. Etiam euismod dapibus eu congue.</p>
       </div>
+      <div id="accordion" role="tablist" aria-multiselectable="true">
+
+        <div class="row schedule">
+          <div class="col-sm-2 date">
+            <h5>08:00 - 08:30</h5>
+          </div>
+          <div class="col-sm-10">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h4>Credenciamento</h4>
+            </a>
+          </div>
+          <div id="collapseOne" class="col-sm-12 collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="collapse-block">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+              on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+              raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <section id="download">
+    <div class="container">
+      <div class="header">
+        <h2>Baixe nosso aplicativo</h2>
+        <p class="lead">Sed condimentum tempus auctor. Etiam euismod dapibus eu congue.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-fluid" src="dist/imgs/mockup.png" width="500">
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="dist/imgs/mockup.png" width="500">
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="dist/imgs/mockup.png" width="500">
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-12 text-center">
+          <a href="https://play.google.com/store/apps/details?id=br.com.autoxis.garagen" target="_blank">
+            <img class="img-fluid" src="http://garagen.com.br/images/play_store.png" width="200">
+          </a>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <section id="funfacts">
@@ -116,7 +203,7 @@
             <i class="fa fa-globe"></i>
             <div class="desc">
               <p class="number">70</p>
-              <p class="description">Países</p>
+              <p class="description">Categorias</p>
             </div>
           </div>
         </div>
@@ -164,42 +251,29 @@
   </section>
 
   <section id="testimonial">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-6 col-md-6 offset-md-6">
-          <div class="testimonial-inner">
-            <div id="testimonial-carousel" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
-              <div class="owl-wrapper-outer">
-                <div class="owl-wrapper" style="width: 5232px; left: 0px; display: block; transition: all 0ms ease; transform: translate3d(0px, 0px, 0px); transform-origin: 436px center 0px; perspective-origin: 436px center;">
-                  <div class="owl-item" style="width: 872px;">
-                    <div class="item">
-                      <img class="rounded-circle" src="http://wpthemecube.com/eventr/wp-content/uploads/2015/07/testimonial1.png" alt="">
-                      <p class="lead">Nulla euismod sit amet ligula in vehicula. Vestibulum cursus ex non ante dignissim ultricies. Sed egestas hendrerit neque tincidunt mattis. Duis euismod porta tempus.</p>
-                      <p class="name"><strong>Lena Kim</strong></p>
-                    </div>
-                  </div>
-                  <div class="owl-item" style="width: 872px;">
-                    <div class="item">
-                      <img class="rounded-circle" src="http://wpthemecube.com/eventr/wp-content/uploads/2015/07/testimonial2.png" alt="">
-                      <p class="lead">Nulla euismod sit amet ligula in vehicula. Vestibulum cursus ex non ante dignissim ultricies. Sed egestas hendrerit neque tincidunt mattis. Duis euismod porta tempus.</p>
-                      <p class="name"><strong>Minnie Pierce</strong></p>
-                    </div>
-                  </div>
-                  <div class="owl-item" style="width: 872px;">
-                    <div class="item">
-                      <img class="rounded-circle" src="http://wpthemecube.com/eventr/wp-content/uploads/2015/07/testimonial3.png" alt="">
-                      <p class="lead">Nulla euismod sit amet ligula in vehicula. Vestibulum cursus ex non ante dignissim ultricies. Sed egestas hendrerit neque tincidunt mattis. Duis euismod porta tempus.</p>
-                      <p class="name"><strong>Todd Stone</strong></p>
-                    </div>
-                  </div>
-                </div>
+    <div class="row">
+      <div class="col-lg-6 offset-lg-6 col-md-6 offset-md-6">
+        <div class="testimonial-inner">
+          <div id="testimonial-carousel" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+            <div class="owl-item">
+              <div class="item">
+                <img class="rounded-circle" src="http://wpthemecube.com/eventr/wp-content/uploads/2015/07/testimonial1.png" alt="">
+                <p class="lead">Nulla euismod sit amet ligula in vehicula. Vestibulum cursus ex non ante dignissim ultricies. Sed egestas hendrerit neque tincidunt mattis. Duis euismod porta tempus.</p>
+                <p class="name"><strong>Lena Kim</strong></p>
               </div>
-              <div class="owl-controls clickable">
-                <div class="owl-pagination">
-                  <div class="owl-page active"><span class=""></span></div>
-                  <div class="owl-page"><span class=""></span></div>
-                  <div class="owl-page"><span class=""></span></div>
-                </div>
+            </div>
+            <div class="owl-item">
+              <div class="item">
+                <img class="rounded-circle" src="http://wpthemecube.com/eventr/wp-content/uploads/2015/07/testimonial2.png" alt="">
+                <p class="lead">Nulla euismod sit amet ligula in vehicula. Vestibulum cursus ex non ante dignissim ultricies. Sed egestas hendrerit neque tincidunt mattis. Duis euismod porta tempus.</p>
+                <p class="name"><strong>Minnie Pierce</strong></p>
+              </div>
+            </div>
+            <div class="owl-item">
+              <div class="item">
+                <img class="rounded-circle" src="http://wpthemecube.com/eventr/wp-content/uploads/2015/07/testimonial3.png" alt="">
+                <p class="lead">Nulla euismod sit amet ligula in vehicula. Vestibulum cursus ex non ante dignissim ultricies. Sed egestas hendrerit neque tincidunt mattis. Duis euismod porta tempus.</p>
+                <p class="name"><strong>Todd Stone</strong></p>
               </div>
             </div>
           </div>
@@ -215,52 +289,108 @@
         <p class="lead">Sed condimentum tempus auctor. Etiam euismod dapibus eu congue.</p>
       </div>
 
-      <div id="sponsors-carousel" style="opacity: 1; display: block;" class="owl-carousel owl-theme">
-        <div class="owl-wrapper-outer">
-          <div class="owl-wrapper" style="width: 2160px; left: 0px; display: block;">
-            <div class="owl-item" style="width: 216px;">
-              <div class="sponsor "><img class="img-responsive" src="http://wpthemecube.com/eventr/wp-content/uploads/2015/07/sponsor1.png" alt="" sponsor=""></div>
-            </div>
-            <div class="owl-item" style="width: 216px;">
-              <div class="sponsor "><img class="img-responsive" src="http://wpthemecube.com/eventr/wp-content/uploads/2015/07/sponsor2.png" alt="" sponsor=""></div>
-            </div>
-            <div class="owl-item" style="width: 216px;">
-              <div class="sponsor "><img class="img-responsive" src="http://wpthemecube.com/eventr/wp-content/uploads/2015/07/sponsor3.png" alt="" sponsor=""></div>
-            </div>
-            <div class="owl-item" style="width: 216px;">
-              <div class="sponsor "><img class="img-responsive" src="http://wpthemecube.com/eventr/wp-content/uploads/2015/07/sponsor4.png" alt="" sponsor=""></div>
-            </div>
-            <div class="owl-item" style="width: 216px;">
-              <div class="sponsor "><img class="img-responsive" src="http://wpthemecube.com/eventr/wp-content/uploads/2015/07/sponsor5.png" alt="" sponsor=""></div>
-            </div>
-          </div>
+      <div id="sponsors-carousel" class="owl-carousel owl-theme">
+        <div class="owl-item">
+          <div class="sponsor">
+            <img class="img-fluid" src="http://wpthemecube.com/eventr/wp-content/uploads/2015/07/sponsor1.png" alt="" sponsor=""></div>
+        </div>
+        <div class="owl-item">
+          <div class="sponsor">
+            <img class="img-fluid" src="http://wpthemecube.com/eventr/wp-content/uploads/2015/07/sponsor2.png" alt="" sponsor=""></div>
+        </div>
+        <div class="owl-item">
+          <div class="sponsor">
+            <img class="img-fluid" src="http://wpthemecube.com/eventr/wp-content/uploads/2015/07/sponsor3.png" alt="" sponsor=""></div>
+        </div>
+        <div class="owl-item">
+          <div class="sponsor">
+            <img class="img-fluid" src="http://wpthemecube.com/eventr/wp-content/uploads/2015/07/sponsor4.png" alt="" sponsor=""></div>
+        </div>
+        <div class="owl-item">
+          <div class="sponsor">
+            <img class="img-fluid" src="http://wpthemecube.com/eventr/wp-content/uploads/2015/07/sponsor5.png" alt="" sponsor=""></div>
         </div>
       </div>
     </div>
   </section>
 
   <section id="gmap">
+    <iframe src='https://www.google.com/maps/d/embed?mid=1MTPKemRLjCyJbhlCirB9OJa_0iIdvTUr'></iframe>
   </section>
 
   <footer>
 
   </footer>
 
+  <div class="subfooter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <ul id="menu-footer" class="list-unstyled list-inline pull-right uppercase">
+            <li><a href="#">Termos</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
   <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="../node_modules/jquery-sticky/jquery.sticky.js"></script>
+  <script src="../node_modules/jquery-countdown/dist/jquery.countdown.min.js"></script>
   <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
 
   <script>
     $(document).ready(function() {
-      // TODO: Corrigir a exibição do carrosel de depoimentos
-      $(".owl-carousel").owlCarousel {
+      $("#sticker").sticky({
+        topSpacing: 0,
+        zIndex: 2
+      });
+
+      $("#testimonial-carousel").owlCarousel({
         loop: true,
         margin: 10,
         dots: true,
-      };
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          1000: {
+            items: 1
+          }
+        }
+      });
+      $("#sponsors-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        dots: true,
+        responsive: {
+          0: {
+            items: 3
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 3
+          }
+        }
+      });
+
+      $('#countdown').countdown('2017/12/12', function(event) {
+        $('#cd-day').html(event.strftime('%D'));
+        $('#cd-hour').html(event.strftime('%H'));
+        $('#cd-minute').html(event.strftime('%M'));
+        $('#cd-second').html(event.strftime('%S'));
+      });
     });
   </script>
+
 </body>
 
 </html>
