@@ -1,0 +1,28 @@
+{
+  "name": "hotsite-premio-destaque-ti",
+  "version": "1.0.0",
+  "description": "Hotsite para o evento Premio Destaque TI",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "jquery-countdown": "^2.2.0",
+    "jquery-sticky": "github:garand/sticky",
+    "popper.js": "^1.12.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unanimad/hotsite-premio-destaque-ti.git"
+  },
+  "author": "Raphael Fontes - CTI Glória",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Unanimad/hotsite-premio-destaque-ti/issues"
+  },
+  "homepage": "https://github.com/Unanimad/hotsite-premio-destaque-ti#readme"
+}
