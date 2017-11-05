@@ -43,6 +43,11 @@ h4, h5 {
   }
 }
 
+.header {
+  position: relative;
+  height: 89vh;
+}
+
 .navbar-custom, .navbar-custom-blog {
   font-family: 'Open sans';
   font-size: 12px;
@@ -58,8 +63,8 @@ h4, h5 {
   transition: background .5s ease-in-out, padding .5s ease-in-out;
 }
 
-.is-sticky header {
-    background: #262626;
+.is-sticky #sticker {
+  background: #262626;
 }
 
 .navbar-nav .nav-link {
@@ -74,6 +79,20 @@ h4, h5 {
 
 .navbar-nav .nav-link:hover {
   color: var(--main-green);
+}
+
+#slider {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  top: 0;
+  height: inherit;
+  width: 100%;
+  overflow: hidden;
+}
+
+#slider img {
+  height: 100%
 }
 
 #highlight .left {
