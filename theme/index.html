@@ -341,24 +341,12 @@
   <script src="../node_modules/jquery-sticky/jquery.sticky.js"></script>
   <script src="../node_modules/jquery-countdown/dist/jquery.countdown.min.js"></script>
   <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-  <script src="../node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
-  <script src="../node_modules/counterup/jquery.counterup.min.js"></script>
 
   <script>
     $(document).ready(function() {
       $("#sticker").sticky({
         topSpacing: 0,
         zIndex: 2
-      });
-
-      $('.number').counterUp({
-        delay: 10,
-        time: 1000,
-        offset: 70,
-        beginAt: 100,
-        formatter: function(n) {
-          return n.replace(/,/g, '.');
-        }
       });
 
       $("#testimonial-carousel").owlCarousel({
@@ -400,7 +388,6 @@
         $('#cd-minute').html(event.strftime('%M'));
         $('#cd-second').html(event.strftime('%S'));
       });
-
     });
   </script>
 
