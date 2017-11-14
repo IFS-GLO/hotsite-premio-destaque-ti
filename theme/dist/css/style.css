@@ -94,7 +94,7 @@ h5 {
   left: 0;
   z-index: -1;
   top: 0;
-  height: inherit;
+  height: 89vh;
   width: 100%;
   overflow: hidden;
 }
@@ -102,6 +102,12 @@ h5 {
 #slider img {
   height: 100%
 }
+#highlight{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 
 #highlight .left {
   text-align: right;
