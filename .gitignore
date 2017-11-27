@@ -1,2 +1,9 @@
+package-lock.json
+
+# Dist files
+theme/dist/fonts/
+theme/dist/css/all.min.css
+theme/dist/js/all.min.js
+
 # Dependency directories
 node_modules/
