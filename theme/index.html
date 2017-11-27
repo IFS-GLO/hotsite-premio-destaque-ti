@@ -7,11 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>II Prêmio Destaques de TI do IFS</title>
 
-  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
-
-  <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css" href="dist/css/all.min.css">
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
@@ -20,7 +16,7 @@
 
 <body>
 
-  <header class="header">
+  <header id="header" class="header">
     <div id="sticker">
       <nav class="navbar navbar-expand-md navbar-custom bg-faded container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +29,7 @@
           <div class="col-md-8">
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Início <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="#header">Início <span class="sr-only">(current)</span></a>
                 <a class="nav-item nav-link" href="#info">Sobre</a>
                 <a class="nav-item nav-link" href="#speakers">Palestrantes</a>
                 <a class="nav-item nav-link" href="#program">Programação</a>
@@ -45,44 +41,46 @@
       </nav>
     </div>
 
+
+    <section id="highlight" class="p-0">
+      <div class="row">
+        <div class="col-sm-8 left">
+          <h2>Junte-se a nós</h2>
+          <p>
+            luctus nec ullamcorper mattis, pulvinar dapibus leo
+          </p>
+        </div>
+        <div id="countdown" class="col-sm-4 right">
+          <div class="row">
+            <div class="col-sm-2 offset-sm-2">
+              <span class="countdown" id="cd-day"></span>
+              <h5>DIAS</h5>
+            </div>
+            <div class="col-sm-2">
+              <span class="countdown" id="cd-hour"></span>
+              <h5>HORAS</h5>
+            </div>
+            <div class="col-sm-2">
+              <span class="countdown" id="cd-minute"></span>
+              <h5>MINUTOS</h5>
+            </div>
+            <div class="col-sm-2">
+              <span class="countdown" id="cd-second"></span>
+              <h5>SEGUNDOS</h5>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
   </header>
 
   <section id="slider" class="p-0">
     <div class="owl-carousel" id="js-slideshow">
       <div class="item">
         <img src="http://wpthemecube.com/eventr/wp-content/uploads/revslider/mainslider/slide1.jpg" alt="">
-      </div>
-    </div>
-  </section>
-
-  <section id="highlight" class="p-0">
-    <div class="row">
-      <div class="col-sm-8 left">
-        <h2>Junte-se a nós</h2>
-        <p>
-          luctus nec ullamcorper mattis, pulvinar dapibus leo
-        </p>
-      </div>
-      <div id="countdown" class="col-sm-4 right">
-        <div class="row">
-          <div class="col-sm-2 offset-sm-2">
-            <span class="countdown" id="cd-day"></span>
-            <h5>DIAS</h5>
-          </div>
-          <div class="col-sm-2">
-            <span class="countdown" id="cd-hour"></span>
-            <h5>HORAS</h5>
-          </div>
-          <div class="col-sm-2">
-            <span class="countdown" id="cd-minute"></span>
-            <h5>MINUTOS</h5>
-          </div>
-          <div class="col-sm-2">
-            <span class="countdown" id="cd-second"></span>
-            <h5>SEGUNDOS</h5>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -340,22 +338,10 @@
     </div>
   </div>
 
-  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="../node_modules/jquery-sticky/jquery.sticky.js"></script>
-  <script src="../node_modules/jquery-countdown/dist/jquery.countdown.min.js"></script>
-  <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-  <script src="../node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
-  <script src="../node_modules/counterup/jquery.counterup.min.js"></script>
+  <script src="dist/js/all.min.js"></script>
 
   <script>
     $(document).ready(function() {
-      $("#sticker").sticky({
-        topSpacing: 0,
-        zIndex: 2
-      });
-
       $('#js-slideshow').owlCarousel({
         loop: true,
         margin: 0,
@@ -365,7 +351,6 @@
         autoplay: true,
         autoplayTimeout: 3000,
       })
-
       $('.number').counterUp({
         delay: 10,
         time: 1000,
@@ -375,7 +360,6 @@
           return n.replace(/,/g, '.');
         }
       });
-
       $("#testimonial-carousel").owlCarousel({
         loop: true,
         margin: 10,
@@ -408,14 +392,12 @@
           }
         }
       });
-
-      $('#countdown').countdown('2017/12/12', function(event) {
+      $('#countdown').countdown('2017/12/15', function(event) {
         $('#cd-day').html(event.strftime('%D'));
         $('#cd-hour').html(event.strftime('%H'));
         $('#cd-minute').html(event.strftime('%M'));
         $('#cd-second').html(event.strftime('%S'));
       });
-
       // Select all links with hashes
       $('a[href*="#"]')
         // Remove links that don't actually link to anything
@@ -451,7 +433,6 @@
             }
           }
         });
-
     });
 
   </script>

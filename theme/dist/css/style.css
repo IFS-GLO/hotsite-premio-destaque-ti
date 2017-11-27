@@ -65,14 +65,11 @@ h5 {
   transition: background .5s ease-in-out, padding .5s ease-in-out;
 }
 
-#sticker-sticky-wrapper {
-  top: 20px;
-  position: absolute;
-  width: 100%;
-}
-
-.is-sticky #sticker {
+#sticker {
   background: #262626;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar-nav .nav-link {
@@ -94,13 +91,19 @@ h5 {
   left: 0;
   z-index: -1;
   top: 0;
-  height: inherit;
+  height: 89vh;
   width: 100%;
   overflow: hidden;
 }
 
 #slider img {
   height: 100%
+}
+
+#highlight {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 #highlight .left {
