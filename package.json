@@ -9,11 +9,16 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "jquery-countdown": "^2.2.0",
-    "jquery-sticky": "github:garand/sticky",
     "owl.carousel": "github:OwlCarousel2/OwlCarousel2",
     "popper.js": "^1.12.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Unanimad/hotsite-premio-destaque-ti.git"
