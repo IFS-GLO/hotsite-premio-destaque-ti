@@ -90,14 +90,9 @@ h5 {
   background-color: var(--main-green);
 }
 
-.navbar .countdown {
+#nav-countdown {
   color: #FFF !important;
   font-size: 14px;
-}
-
-.navbar h5 {
-  color: #FFF;
-  font-size: 10px;
 }
 
 #slider {

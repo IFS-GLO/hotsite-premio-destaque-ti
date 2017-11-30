@@ -38,21 +38,21 @@
           </div>
           <div id="nav-countdown" class="col-md-3 offset-md-2">
             <div class="row text-center">
-              <div class="col-sm-3">
+              <div class="col-xs-3">
                 <span class="countdown cd-day"></span>
-                <h5>D</h5>
+                <span>D</span>
               </div>
-              <div class="col-sm-3">
+              <div class="col-xs-3 offset-md-1">
                 <span class="countdown cd-hour"></span>
-                <h5>H</h5>
+                <span>H</span>
               </div>
-              <div class="col-sm-3">
+              <div class="col-xs-3 offset-md-1">
                 <span class="countdown cd-minute"></span>
-                <h5>M</h5>
+                <span>M</span>
               </div>
-              <div class="col-sm-3">
+              <div class="col-xs-3 offset-md-1">
                 <span class="countdown cd-second"></span>
-                <h5>S</h5>
+                <span>S</span>
               </div>
             </div>
           </div>
@@ -397,10 +397,7 @@
     });
     $(window).scroll(function() {
       var hT = $('#highlight').offset().top,
-        hH = $('#highlight').outerHeight(),
-        wH = $(window).height(),
         wS = $(this).scrollTop();
-      console.log(hH, hT, wS);
       if (wS > hT) {
         $('#nav-countdown .row').fadeIn(500);
       } else {
