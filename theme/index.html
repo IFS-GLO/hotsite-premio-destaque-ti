@@ -25,7 +25,7 @@
           <div class="col-md-4 text-center">
             <a class="navbar-brand" href="#">Navbar</a>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-5">
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="#header">Início <span class="sr-only">(current)</span></a>
@@ -33,6 +33,26 @@
                 <a class="nav-item nav-link" href="#speakers">Palestrantes</a>
                 <a class="nav-item nav-link" href="#program">Programação</a>
                 <a class="nav-item nav-link" href="#gmap">Onde</a>
+              </div>
+            </div>
+          </div>
+          <div id="nav-countdown" class="col-md-3 offset-md-2">
+            <div class="row text-center">
+              <div class="col-sm-3">
+                <span class="countdown cd-day"></span>
+                <h5>D</h5>
+              </div>
+              <div class="col-sm-3">
+                <span class="countdown cd-hour"></span>
+                <h5>H</h5>
+              </div>
+              <div class="col-sm-3">
+                <span class="countdown cd-minute"></span>
+                <h5>M</h5>
+              </div>
+              <div class="col-sm-3">
+                <span class="countdown cd-second"></span>
+                <h5>S</h5>
               </div>
             </div>
           </div>
@@ -50,21 +70,22 @@
           </p>
         </div>
         <div id="countdown" class="col-sm-4 right">
+
           <div class="row">
             <div class="col-sm-2 offset-sm-2">
-              <span class="countdown" id="cd-day"></span>
+              <span class="countdown cd-day"></span>
               <h5>DIAS</h5>
             </div>
             <div class="col-sm-2">
-              <span class="countdown" id="cd-hour"></span>
+              <span class="countdown cd-hour"></span>
               <h5>HORAS</h5>
             </div>
             <div class="col-sm-2">
-              <span class="countdown" id="cd-minute"></span>
+              <span class="countdown cd-minute"></span>
               <h5>MINUTOS</h5>
             </div>
             <div class="col-sm-2">
-              <span class="countdown" id="cd-second"></span>
+              <span class="countdown cd-second"></span>
               <h5>SEGUNDOS</h5>
             </div>
           </div>
@@ -281,6 +302,7 @@
 
   <script>
     $(document).ready(function() {
+      $('#nav-countdown .row').css('display', 'none');
       $('#js-slideshow').owlCarousel({
         loop: true,
         margin: 0,
@@ -331,11 +353,11 @@
           }
         }
       });
-      $('#countdown').countdown('2017/12/15', function(event) {
-        $('#cd-day').html(event.strftime('%D'));
-        $('#cd-hour').html(event.strftime('%H'));
-        $('#cd-minute').html(event.strftime('%M'));
-        $('#cd-second').html(event.strftime('%S'));
+      $('#countdown').countdown('2017/12/18', function(event) {
+        $('.cd-day').html(event.strftime('%D'));
+        $('.cd-hour').html(event.strftime('%H'));
+        $('.cd-minute').html(event.strftime('%M'));
+        $('.cd-second').html(event.strftime('%S'));
       });
       // Select all links with hashes
       $('a[href*="#"]')
@@ -372,6 +394,18 @@
             }
           }
         });
+    });
+    $(window).scroll(function() {
+      var hT = $('#highlight').offset().top,
+        hH = $('#highlight').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      console.log(hH, hT, wS);
+      if (wS > hT) {
+        $('#nav-countdown .row').fadeIn(500);
+      } else {
+        $('#nav-countdown .row').fadeOut(500);
+      }
     });
 
   </script>
